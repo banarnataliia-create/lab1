@@ -1,6 +1,3 @@
-# lab1
-My university projects and laboratory works.
-
 import tkinter as tk
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -45,7 +42,7 @@ class PicnicApp:
         ttk.Label(left_frame, text="Ймовірність дощу (p):", style="Header.TLabel").pack(anchor=tk.W, pady=(0, 5))
         p_frame = ttk.Frame(left_frame)#okremii konteiner dlia povzunka i znachennia
         p_frame.pack(fill=tk.X, pady=(0, 15))
-        
+        #stvorennia povzunka dlia 
         slider = ttk.Scale(p_frame, from_=0.0, to=1.0, variable=self.p_rain, command=lambda e: self.update_calculations())
         slider.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 10))
 
@@ -174,4 +171,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = PicnicApp(root)
     root.mainloop()
-    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6cf23c6c-25f8-444f-afc4-9662ebd4b39e" />
