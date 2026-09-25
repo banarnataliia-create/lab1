@@ -45,7 +45,7 @@ class PicnicApp:
         ttk.Label(left_frame, text="Ймовірність дощу (p):", style="Header.TLabel").pack(anchor=tk.W, pady=(0, 5))
         p_frame = ttk.Frame(left_frame)#okremii konteiner dlia povzunka i znachennia
         p_frame.pack(fill=tk.X, pady=(0, 15))
-        #stvorennia povzunka dlia 
+        
         slider = ttk.Scale(p_frame, from_=0.0, to=1.0, variable=self.p_rain, command=lambda e: self.update_calculations())
         slider.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 10))
 
